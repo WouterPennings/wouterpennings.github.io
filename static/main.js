@@ -11,7 +11,7 @@ function GetDiscription() {
     const current = parseInt(new Date().getFullYear());
     let diff = current - start;
     if(diff === 1) insert = "sophomore";
-    else if(diffx === 2) insert = "junior";
+    else if(diff === 2) insert = "junior";
     else if(diff === 3) insert = "senior";
     else if(diff > 4) insert = "graduated";
 
