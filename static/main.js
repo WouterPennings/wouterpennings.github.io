@@ -15,5 +15,7 @@ function GetDiscription() {
     else if(diff === 3) insert = "senior";
     else if(diff > 4) insert = "graduated";
 
-    document.write(`I am a ${insert} computer science student at Fonty's University of Applied Sciences.`)
+    let x = `I am a ${insert} computer science student at Fonty's University of Applied Sciences.`;
+    console.log(x);
+    return x;
 }

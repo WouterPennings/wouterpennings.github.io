@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
 html {
-    background-color: black;
+    background-color: #000000;
 }
 
 body {
@@ -13,14 +13,14 @@ body {
 }
 
 a:hover {
-    color: blueviolet
+    color: blueviolet;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 15%;
+    padding-left: 20%;
 }
 
 .right {
