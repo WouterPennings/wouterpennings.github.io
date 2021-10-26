@@ -1,2 +1,2 @@
 ## Loop Language
-Personal [website](wouterpennings.com), hosted on GitHub
+Personal [website](https://www.wouterpennings.com), hosted on GitHub
