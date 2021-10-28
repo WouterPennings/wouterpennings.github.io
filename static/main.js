@@ -1,7 +1,18 @@
+function GetAge() {
+    const today = new Date();
+    const birth = new Date('2003/08/07');
+
+    const m = today.getMonth() - birth.getMonth();
+    const d = today.getDate() - birth.getDate();
+
+    let y = today.getFullYear() - birth.getFullYear();
+    if (m < 0 || (m === 0 && d < 0)) y--;
+
+    return y;
+}
+
 function GetSubtitle(){
-    const birth = parseInt(new Date('August 07, 2003 00:01').getFullYear());
-    const currentYear = parseInt(new Date().getFullYear());
-    const text = `${(currentYear - birth)} Years // Dutch`;
+    const text = `${GetAge()} Years // Dutch`;
     document.write(text);
 }
 
