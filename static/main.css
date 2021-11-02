@@ -6,12 +6,17 @@ html {
 }
 
 body {
-    margin: 0 0 0 0;
+    margin: 100px 0 0 0;
 }
 
 footer {
     margin: 0 0 0 0;
     padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blueviolet;
 }
 
 main  {
@@ -61,6 +66,9 @@ h1 {
 
     div.contact {
         margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     div.link {
@@ -73,15 +81,24 @@ h1 {
 }
 
 .container {
-    margin: 200px 35% 0 15%;
+    margin: 50px 20% 0 20%;
 }
 
-.link:hover {
-    color: blueviolet;
-    padding-left: 40px;
+.linkBox:hover {
+    border: 5px solid blueviolet;
+    border-radius: 15px;
+    background-color: blueviolet;
+
+    padding: 5px 30px 10px 30px;
+    margin: 0;
+
+    transition: 0.3s;
 }
 
 .contact {
+    display: flex;
+    justify-content: space-between;
+
     margin: 0 0 150px 0;
 }
 
@@ -92,7 +109,7 @@ h1 {
     color: white;
     font-weight: bold;
 
-    padding-right: 25px;
+    padding: 5px 20px 10px 20px;
 
     transition: 0.4s;
 }
@@ -107,7 +124,7 @@ h1 {
 }
 
 .name {
-    font-size: 70px;
+    font-size: 80px;
     font-family: 'Roboto Mono', monospace;
     font-style: italic;
     color: blueviolet;
@@ -139,7 +156,15 @@ h1 {
     display: flex;
     align-items: stretch;
 
-    margin: 15px 0 0 0;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: black;
+
+    text-align: center;
+
+    margin: 5px 30px 10px 30px;
+    
+    transition: 0.3s;
 }
 
 .arrow {
